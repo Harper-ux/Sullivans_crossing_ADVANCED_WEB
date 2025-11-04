@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Foods - Bhaccasyoniztas Beach Resort Website Template</title>
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="../index.html"><img src="../assets/images/logo.jpg" alt="LOGO" height="112" width="118"></a>
+				</div>
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="../index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="rooms.html">Rooms</a>
+						</li>
+						<li>
+							<a href="events.html">Events</a>
+						</li>
+						<li class="selected">
+							<a href="ski_rentals.html">Rentals</a>
+						</li>
+						<li>
+							<a href="reservations.html">Reservations</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>Ski and Snowboarding rentals</h1>
+							<p>
+								We offer ski and snowboard rentals for all skill levels. Whether you're a beginner or an experienced rider, we have the right equipment for you. Our rental shop is conveniently located at the base of the mountain, making it easy to pick up and drop off your gear.
+							</p>
+							<p>
+								Prices:
+                                <table>
+                                    Ski Rentals Half-day: $30
+                                    <br>
+                                    Ski Rentals Full-day: $50
+                                    <br>
+                                    Ski Rentals Multi-day (3 days+): $45 per day
+                                    <br>
+                                    <br>
+                                    Snowboard Rentals Half-day: $30
+                                    <br>
+                                    Snowboard Rentals Full-day: $50
+                                    <br>
+                                    Snowboard Rentals Multi-day (3 days+): $45 per day
+                                </table>
+							</p>
+							<form action="submittion.html" method="get">
+								<script src="../public/assets/script.js"></script>
+								<label for="fname">First name:</label><br>
+								<input type="text" id="fname" name="fname" placeholder="First Name"><br>
+								
+								<label for="address">Address:</label><br>
+								<input type="text" id="address" name="address" placeholder="Address" required><br><br>
+								
+								<label for="phone">Phone Number:</label><br>
+								<input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+								
+								<label for="group">Group Count:</label><br>
+								<input type="number" id="group" name="group" min="1" value="1" required><br><br>
+								
+								<label for="payment">Payment Type:</label><br>
+								<select id="payment" name="payment" required>
+									<option value="credit-card">Credit Card</option>
+									<option value="debit-card">Debit Card</option>
+									<option value="cash">Cash</option>
+								</select><br><br>
+								
+								<label for="waiver">Insurance Waiver:</label><br>
+								<input type="checkbox" id="waiver" name="waiver" value="accepted" required>
+								<label for="waiver">I accept the insurance waiver</label><br><br>
+								<!--Before next class add Create, Add, Update, and delete for this table-->
+								<label for="equipment">Select Equipment:</label><br>
+								<select id="equipment" name="equipment" required>
+									<option value="ski">Ski</option>
+									<option value="snowboard">Snowboard</option>
+								</select><br><br>
+
+								<label for="rental">Select Rental Option:</label><br>
+								<select id="rental" name="rental" required>
+									<option value="half-day">Half-day rental: $30</option>
+									<option value="full-day">Full-day rental: $50</option>
+									<option value="multi-day">Multi-day rental: $45 per day (3 days+)</option>
+								</select><br><br>
+
+								<label for="start-date">Start Date:</label><br>
+								<input type="date" id="start-date" name="start-date" required><br><br>
+
+								<label for="end-date">End Date:</label><br>
+								<input type="date" id="end-date" name="end-date" required><br><br>
+
+								<input type="submit" value="Submit">
+								<!-- Need to add serveer side validation so no malicious usage
+								 Look at selfprocform.php 
+								 or Item_CRUD.php-->
+							</form>
+							<?php
+
+							
+							// PHP code to handle form submission and validation will go here
+							
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">	
+			<div>
+				<ul class="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="rooms.html">Rooms</a>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+					<li class="active">
+						<a href="ski_rentals.html">Rentals</a>
+					</li>
+					<li>
+						<a href="reservations.html">Reservations</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<div id="connect">
+					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+				</div>
+			</div>
+			<p>
+				© 2023 by Sullivans Crossing Ski Lodge and Resort. All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
